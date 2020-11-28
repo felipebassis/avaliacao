@@ -1,15 +1,16 @@
 package com.elotech.avaliacao.pessoa.entity;
 
-import javax.persistence.Column;
-import javax.persistence.Embeddable;
-
 import lombok.AccessLevel;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 
+import javax.persistence.Column;
+import javax.persistence.Embeddable;
+import java.io.Serializable;
+
 @Embeddable
 @NoArgsConstructor(access = AccessLevel.PROTECTED)
-public class Cpf {
+public class Cpf implements Serializable {
 
     @Getter
     @Column(name = "cpf")

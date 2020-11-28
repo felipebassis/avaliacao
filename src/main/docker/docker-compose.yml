@@ -1,0 +1,11 @@
+version: "3.8"
+services:
+  database:
+    image: "postgres:13"
+    container_name: avaliacao_elotech
+    environment:
+      POSTGRES_DB: elotech
+      POSTGRES_USER: elotech
+      POSTGRES_PASSWORD: elotech
+    ports:
+      - 9876:5432

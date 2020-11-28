@@ -1,4 +1,4 @@
-package com.elotech.avaliacao.common;
+package com.elotech.avaliacao.common.crud;
 
 import java.io.Serializable;
 
